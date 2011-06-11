@@ -163,10 +163,10 @@ css += "div.hQfrn, .OH0apf { display: none !important; }";
 			if($(".cM").size()>0){
 				var label = 'Mail';
 			} else {
-				var label = 'Calendar';
+				var label = 'Contacts';
 			}
 
-			var html = '<li class="gbt"><a class="gbgt spA"><span class="gbtb2"></span>'
+			var html = '<li class="gbt"><a class="gbgt spA"><span class="gbtb2"></span>'+
 					   '<span class="gbts spContact"><span>' + label + '</span></span></a></li>'+
 					   '<li class="gbt"><a class="gbgt spA"><span class="gbtb2"></span>' +
 					   '<span class="gbts spTask"><span>Tasks</span></span></a></li>';
@@ -203,6 +203,10 @@ css += "div.hQfrn, .OH0apf { display: none !important; }";
 					else if(iop){iop.dispatchEvent(evt);}
 				}
 				
+			});
+			//prevent the text selectable, make it more like a button
+			$('.spContact, .spTask').mousedown(function(){
+				$(this).css('-webkit-user-select', 'none');
 			});
 		}
 		
