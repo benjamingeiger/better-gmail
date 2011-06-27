@@ -1,12 +1,12 @@
 {
    "background_page": "background.html",
    "content_scripts": [ {
-      "css": [ "default.css" ],
-      "js": [ "script.js", "jquery.js" ],
+      "css": [ "css/default.css" ],
+      "js": [ "js/script.js", "js/jquery.js" ],
       "matches": [ "http://mail.google.com/*", "https://mail.google.com/*" ]
    }, {
       "all_frames": true,
-      "js": [ "mailto.js" ],
+      "js": [ "js/mailto.js" ],
       "matches": [ "http://*/*", "https://*/*" ]
    } ],
    "converted_from_user_script": true,
