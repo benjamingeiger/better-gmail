@@ -154,6 +154,8 @@ css += "div.hQfrn, .OH0apf { display: none !important; }";
 				
 			css+="table img[title$=txt] { width:0px!important; height:0px!important; padding-left:16px!important; padding-top:16px!important;background-position: top left !important;background-image: url(https://mail.google.com/mail/u/0/images/txt.gif)!important;}";
 			
+			
+			
 
 		}
 		
@@ -240,23 +242,24 @@ css += "div.hQfrn, .OH0apf { display: none !important; }";
 			else if(pa){pa.dispatchEvent(evt);}
 			
 		});
-				//		$('html.cQ').css({
-				//			'overflow-y':'auto',
-				//			'height':'39%',
-				//			'width':'39%'
-				//		});
-				//		
-				//		setTimeout(function(){
-				//			$(window).css({
-				//				'height':'99%',
-				//				'width':'99%'
-				//			});		
-				//			$(window).css({
-				//				'height':'100%',
-				//				'width':'100%'
-				//			});
-				//		
-				//		},500);
+//						$('html.cQ').css({
+//							'overflow-y':'auto'
+//						});
+						
+//						$('body').css({
+//							'height':'100px'
+//						});
+//						setTimeout(function(){
+//							$(window).css({
+//								'height':'99%',
+//								'width':'99%'
+//							});		
+//							$(window).css({
+//								'height':'100%',
+//								'width':'100%'
+//							});
+//						
+//						},500);
 
 		
 //		$('html.cQ').css({
@@ -265,18 +268,36 @@ css += "div.hQfrn, .OH0apf { display: none !important; }";
 //		});
 		
 							//in progresss
-				//			var wh = $('body:eq(0)').height();
-				//			var rh = parseInt(wh)-300;
-				//			$('div.Cp').css({
-				//				'height': rh + 'px',
-				//				'overflow-x':'hidden'
-				//			});
-			
+//							var wh = $('body:eq(0)').height();
+							//alert(wh);
+//							var rh = parseInt(wh)-350;
+//							var sh = rh;
+//							$('div.Cp').css({
+//								'height': rh + 'px',
+//								'overflow-x':'hidden'
+//							});
+//							
+//							setTimeout(function(){
+								//trigger document resize
+//								$('body').css({
+//									'height':'1px'
+//								});
+//								$(document).css({
+//									'height':'1px'
+//								});
+//								$('body').css({
+//									'height': wh
+//								});
+//							},500);
+//							$('body.Cp').css({
+//								'overflow':'hidden'
+//							})
+//							$('#canvas_frame .Bk').css({
+//								'height': '100px',
+//								'overflow-x':'hidden'
+//							});
 		
-		
-		
-//		alert(window[0].innerHeight);
-//		if($('div.Cp').length){alert('de');}
+
 
 	});//end chrome extension request
 })();
